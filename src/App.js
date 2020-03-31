@@ -17,10 +17,11 @@ render(){
  return (
     <div>
 
-   // <Login/>
-    <Register/>
+    <Login/>
+    <Shop/>
+    <Workout/>
+    <Diet/>
     <Contact/>
-    <Background/> 
 
     </div>
 
