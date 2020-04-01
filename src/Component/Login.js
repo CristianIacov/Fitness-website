@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+const Login = () => {
   return (
  
                    <nav>
@@ -14,6 +14,5 @@ import React from 'react';
         </nav>
     
   );
-
-
+}
 export default Login;
