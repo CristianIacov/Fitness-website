@@ -3,9 +3,12 @@ import './App.css';
 import Login from './Component/Login';
 import Register from './Component/Register';
 import Contact from './Component/Contact';
-import Background from './Component/Background';
 import {render} from 'react-dom';
 import Navigation from './Component/Navigation';
+import Shop from './Component/Shop';
+import Workout from './Component/Workout';
+import Diet from './Component/Diet';
+import About from './Component/About';
 import 'tachyons';
 
 class App extends Component{
@@ -20,7 +23,8 @@ render(){
  return (
     <div>
 
-    <Login/>
+    <Navigation/>
+    <About/>
     <Shop/>
     <Workout/>
     <Diet/>

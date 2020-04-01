@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Workout = () => {
+const About = () => {
   return (
     <div>
   	</div>
@@ -9,4 +9,4 @@ const Workout = () => {
   );
 }
 
-export default Workout;
+export default About;
