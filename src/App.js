@@ -15,36 +15,75 @@ class App extends Component{
   constructor(){
     super();
     this.state={
+      route: 'home',
+      isContact: false,
+      isSignedin: false,
+      isShop:false ,
+      isAbout:false,
+      isWorkout:false,
+      isHome: true
      
 
     };
   }
+    onRouteChange = (route) => {
+    if( route === 'signout'){
+      this.setState({isSignedIn: false})
+
+    }
+    else if (route === 'home')
+    {
+      this.setState({isHome: true})
+    }
+    else
+      if (route === 'about')
+        this.setState({isAbout: true})
+    this.setState({route: route});
+  }
+
 render(){
+  const {isSignedIn,route,isHome,isWorkout,isContact,isAbout,isShop}=this.state;
  return (
-    <div>
-
-    <Navigation/>
-    <About/>
-    <Shop/>
-    <Workout/>
-    <Diet/>
-    <Contact/>
-
-<main className="pa3 pa5-ns">
+    
+<div className="App">
+    <Navigation  
+   
+    isContact={isContact} isSignedIn={isSignedIn} 
+    isShop={isShop} isAbout={isAbout}  isWorkout={isWorkout} 
+    isHome={isHome}  onRouteChange={this.onRouteChange}/>
+     
+  
+{
+route ==='home'?
+<main>
+<div className="pa3 pa5-ns" >
+   
    <p className="f4 lh-copy measure">
    START YOUR TRANSFORMATION NOW 
    WITH THE BEST WORKOUT&DIET PLANS
    ON THE MARKET RIGHT NOW.
+   
    </p>
+   </div>
    </main>
+  
+   :  (route === 'about'?
+<About />
+:
+<div>
+<h1> asdsa </h1>
+</div>)
+
+}
+   </div>
+   
     
-    </div>
     
 
 
 
 );
 }
-} 
 
+}
 export default App;

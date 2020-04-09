@@ -1,4 +1,4 @@
-.App {
+.mainpage {
   text-align: center;
   background-color: #96CCFF;
 }
@@ -17,7 +17,7 @@
   }
 }
 
-.App-header {
+.mainpage {
   background-color: #96CCFF;
   min-height: 100vh;
   display: flex;
