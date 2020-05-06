@@ -9,6 +9,7 @@ import Shop from './Component/Shop';
 import Workout from './Component/Workout';
 import Diet from './Component/Diet';
 import About from './Component/About';
+import SPORTIFYIMAGE from './SPORTIFYIMAGE.jpg';
 import 'tachyons';
 
 class App extends Component{
@@ -45,7 +46,7 @@ render(){
   const {isSignedIn,route,isHome,isWorkout,isContact,isAbout,isShop}=this.state;
  return (
     
-<div className="App">
+<div className="App" >
     <Navigation  
    
     isContact={isContact} isSignedIn={isSignedIn} 
