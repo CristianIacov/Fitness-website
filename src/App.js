@@ -68,11 +68,21 @@ route ==='home'?
    </main>
   
    :  (route === 'about'?
+    
 <About />
-:
-<div>
-<h1> asdsa </h1>
-</div>)
+
+
+
+: (route === 'login'?
+  
+  
+  <Login />
+
+  : (route === 'workout'?
+    <Workout />
+    :
+    <h1> Main Page </h1>
+  )))
 
 }
    </div>

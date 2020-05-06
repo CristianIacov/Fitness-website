@@ -1,6 +1,6 @@
 .mainpage {
   text-align: center;
-  background-color: #96CCFF;
+  /*background-color: #96CCFF;*/
 }
 
 .App-logo {
@@ -9,7 +9,7 @@
 }
 .mainpage {
   height: 100%;
- background-color: #96CCFF;
+/* background-color: #96CCFF;*/
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -17,8 +17,8 @@
   }
 }
 
-.mainpage {
-  background-color: #96CCFF;
+.App-header {
+  /*background-color: #96CCFF;*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  /*color: #61dafb;*/
 }
 
 @keyframes App-logo-spin {
