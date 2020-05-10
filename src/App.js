@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import Login from './Component/Login';
-import Register from './Component/Register';
-import Contact from './Component/Contact';
+import Login from './Components/Login';
+import Register from './Components/Register';
+import Contact from './Components/Contact';
 import {render} from 'react-dom';
-import Navigation from './Component/Navigation';
-import Shop from './Component/Shop';
-import Workout from './Component/Workout';
-import Diet from './Component/Diet';
-import About from './Component/About';
+import Navigation from './Components/Navigation';
+import Shop from './Components/Shop';
+import Workout from './Components/Workout';
+import Diet from './Components/Diet';
+import Cart from './Components/Cart';
+import About from './Components/About';
 import SPORTIFYIMAGE from './SPORTIFYIMAGE.jpg';
 import 'tachyons';
 
@@ -22,6 +23,8 @@ class App extends Component{
       isShop:false ,
       isAbout:false,
       isWorkout:false,
+      isDiet:false,
+      isCart:false,
       isHome: true
      
 
@@ -54,45 +57,32 @@ render(){
     isHome={isHome}  onRouteChange={this.onRouteChange}/>
      
   
-{
-route ==='home'?
-<main>
-<div className="pa3 pa5-ns" >
+    {
+      route ==='home'?
+      <main>
+      <div className="pa3 pa5-ns" >
    
-   <p className="f4 lh-copy measure">
-   START YOUR TRANSFORMATION NOW 
-   WITH THE BEST WORKOUT&DIET PLANS
-   ON THE MARKET RIGHT NOW.
+        <p className="f4 lh-copy measure">
+          START YOUR TRANSFORMATION NOW 
+          WITH THE BEST WORKOUT&DIET PLANS
+          ON THE MARKET RIGHT NOW.
    
-   </p>
-   </div>
-   </main>
+        </p>
+      </div>
+      </main>
   
-   :  (route === 'about'?
-    
-<About />
-
-
-
-: (route === 'login'?
-  
-  
-  <Login />
-
-  : (route === 'workout'?
-    <Workout />
+      :  (route === 'about'?
+      <About />
+      : (route === 'login'?
+      <Login />
+      : (route === 'workout'?
+      <Workout />
     :
     <h1> Main Page </h1>
-  )))
+    )))
 
-}
-   </div>
-   
-    
-    
-
-
-
+    }
+    </div>
 );
 }
 

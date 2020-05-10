@@ -1,6 +1,6 @@
 body {
 
-maring:0;
+/*maring:0;*/
 padding:0;
 /*background-color: #96CCFF;*/
 background-image: url(./SPORTIFYIMAGE.jpg);
@@ -30,4 +30,42 @@ background-image: url(./SPORTIFYIMAGE.jpg);
     .pa5-ns {
         padding: 4rem;
     }
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+.material-icons{
+    font-size: 2.4em;
+    cursor: pointer;
+}
+.card{
+    width: 300px;
+}
+.card .card-image .card-title{
+    color: black;
+    font-weight: 400
+}
+.cart{
+    margin-top:40px;
+}
+.collection .collection-item{
+    display: flex;
+}
+.collection-item.avatar .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ee6e73;
+    display: block;
+    margin-bottom: 20px;
+    
+}
+.collection .collection-item img{
+    width: 150px;
+    margin-right: 25px;
+}
+.item-desc{
+    align-self:center;
 }

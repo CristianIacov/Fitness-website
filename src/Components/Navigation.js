@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navigation.css';
-const Navigation = ({isContact,isSignedin,isShop,isAbout,isWorkout,isHome,onRouteChange}) => {
+const Navigation = ({isContact,isSignedin,isShop,isAbout,isWorkout,isDiet,isCart,isHome,onRouteChange}) => {
   
   	
       return (
@@ -12,7 +12,9 @@ const Navigation = ({isContact,isSignedin,isShop,isAbout,isWorkout,isHome,onRout
     <p onClick={() => onRouteChange('about')} className="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" href="/about">About</p>
     <p  onClick={() => onRouteChange('contact')} className="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="/contact">Contact</p>
     <p  onClick={() => onRouteChange('workout')} className="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="/workout">Workout</p>
-    <p  onClick={() => onRouteChange('shop')} className="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" href="/shop">Clothing & Suppliments</p>
+    <p  onClick={() => onRouteChange('diet')} className="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="/workout">Diet</p>
+    <p  onClick={() => onRouteChange('shop')} className="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" href="/shop">Shop</p>
+    <p  onClick={() => onRouteChange('cart')} className="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="/workout">Cart</p>
     <p  onClick={() => onRouteChange('login')} className="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pa3 ph4-l" href="/">Get Started</p>
     <p className="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l" href="/"></p>
   </nav>
