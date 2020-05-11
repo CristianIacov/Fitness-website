@@ -18,7 +18,7 @@ class Cart extends Component{
         this.props.subtractQuantity(id);
     }
     render(){
-              
+        
         let addedItems = this.props.items.length ?
             (  
                 this.props.items.map(item=>{
@@ -37,8 +37,8 @@ class Cart extends Component{
                                             <b>Quantity: {item.quantity}</b> 
                                         </p>
                                         <div className="add-remove">
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
-                                            <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
+                                        <i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i>
+                                           <i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i>
                                         </div>
                                         <button className="waves-effect waves-light btn pink remove" onClick={()=>{this.handleRemove(item.id)}}>Remove</button>
                                     </div>
