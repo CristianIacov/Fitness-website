@@ -87,19 +87,19 @@
     color: rgba(0, 0, 0, .8);
 }
 
-.white {
+/*.white {
     color: #fff;
-}
+}*/
 
-.bg-black-80 {
+/*.bg-black-80 {
     background-color: rgba(0, 0, 0, .8);
-}
+}*/
 
-.bg-white {
+/*.bg-white {
     background-color: #fff;
-}
+} */
 
-.hover-bg-light-yellow:hover {
+/*.hover-bg-light-yellow:hover {
     background-color: #fbf1a9;
 }
 
@@ -137,7 +137,7 @@
 
 .hover-bg-lightest-blue:focus {
     background-color: #cdecff;
-}
+} */
 
 .pa3 {
     padding: 1rem;
@@ -181,9 +181,9 @@
     margin-left: auto;
 }
 
-.bg-animate, .bg-animate:hover, .bg-animate:focus {
+/*.bg-animate, .bg-animate:hover, .bg-animate:focus {
     transition: background-color .15s ease-in-out;
-}
+}*/
 
 @media screen and (min-width: 60em) {
     .ph4-l {

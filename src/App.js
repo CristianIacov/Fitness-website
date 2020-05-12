@@ -14,7 +14,7 @@ import About from './Components/About';
 import SPORTIFYIMAGE from './SPORTIFYIMAGE.jpg';
 import 'tachyons';
 
-class App extends Component{
+export default class App extends React.Component{
   constructor(){
     super();
     this.state={
@@ -48,9 +48,16 @@ class App extends Component{
 
 render(){
   const {isSignedIn,route,isHome,isWorkout,isContact,isAbout,isShop}=this.state;
+  /*const myImage = require('./Images/Background.jpeg');
+  const divStyle = {
+    width: '88%',
+    height: '800px',
+    backgroundImage: `url(${myImage})`,
+    backgroundSize: 'cover'   
+  }; */
  return (
     
-<div className="App" >
+<div className="App" /*style={divStyle} */ > 
     <Navigation  
    
     isContact={isContact} isSignedIn={isSignedIn} 
@@ -94,4 +101,4 @@ render(){
 }
 
 }
-export default App;
+

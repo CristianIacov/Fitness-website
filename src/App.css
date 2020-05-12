@@ -32,12 +32,12 @@
   color: #61dafb;
 }
 
-.App{/*)
-  background-image: url(./SPORTIFYIMAGE.jpg);
-  background-repeat: no-repeat;
-   background-size: contain; 
-   background-size: 2080px 2080px;*/
-
+.App{
+  background-image: url(./Images/Background.jpeg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
 }
 @keyframes App-logo-spin {
   from {
