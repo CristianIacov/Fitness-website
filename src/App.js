@@ -85,15 +85,17 @@ render(){
       <Login />
       : (route === 'workout'?
       <Workout />
-    :(route === 'cart'?
-    <Cart />
-    :(route === 'shop'?
+      : (route === 'diet'?
+      <Diet />
+      :(route === 'cart'?
+      <Cart />
+      :(route === 'shop'?
       <Shop onRouteChange={this.onRouteChange}/>
       :(route === 'homenavbar'?
         <HomeNavbar />
         :
     <h1> Main Page </h1>
-    ))))))
+    )))))))
 
     }
     </div>

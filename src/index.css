@@ -2,15 +2,15 @@ body {
 
 margin:0;
 padding:0;
-/*background-color: #96CCFF;*/
-/*background-image: url(./SPORTIFYIMAGE.jpg);
+/*background-color: #96CCFF;
+background-image: url(./SPORTIFYIMAGE.jpg);
   background-repeat: no-repeat;
    background-size: contain; 
-   height: 100%;*/
-   backgorund-image: url("./Images/Background.jpeg");
+   height: 100%;
+   background-image: url("./Images/Background.jpeg");
    background-repeat: no-repeat;
    background-attachment: fixed;
-   background-size: cover;
+   background-size: cover; */
 }
 
 .lh-copy {
@@ -74,9 +74,3 @@ padding:0;
     align-self:center;
 }
 
-.App{
-   background: url("./Images/Background.jpeg") no-repeat; 
-   background-size: cover;
-   min-width: 100%;
-   min-height: 100%;
-}
