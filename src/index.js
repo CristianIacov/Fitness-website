@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
-import store from './store';
+import { createStore } from 'redux';
+import CartItems from './Components/CartItems';
 
 /*ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ import store from './store';
   </React.StrictMode>,
   document.getElementById('root')
 );*/
+const store = createStore(CartItems);
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
@@ -19,4 +21,3 @@ ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementB
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();	
 
-	

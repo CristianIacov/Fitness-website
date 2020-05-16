@@ -9,7 +9,7 @@ import Shop from './Components/Shop';
 import Workout from './Components/Workout';
 import Diet from './Components/Diet';
 import Cart from './Components/Cart';
-import HomeNavbar from './Components/HomeNavbar';
+import ShopItems from './Components/ShopItems';
 import About from './Components/About';
 import SPORTIFYIMAGE from './SPORTIFYIMAGE.jpg';
 import 'tachyons';
@@ -90,12 +90,10 @@ render(){
       :(route === 'cart'?
       <Cart />
       :(route === 'shop'?
-      <Shop onRouteChange={this.onRouteChange}/>
-      :(route === 'homenavbar'?
-        <HomeNavbar />
+      <ShopItems/>
         :
     <h1> Main Page </h1>
-    )))))))
+    ))))))
 
     }
     </div>

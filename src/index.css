@@ -46,10 +46,11 @@ background-image: url(./SPORTIFYIMAGE.jpg);
     cursor: pointer;
 }
 .card{
-    width: 300px;
+    width: 200px;
+    height: 500px;
 }
 .card .card-image .card-title{
-    color: black;
+    color:white;
     font-weight: 400
 }
 .cart{
@@ -61,10 +62,14 @@ background-image: url(./SPORTIFYIMAGE.jpg);
 .collection-item.avatar .title {
     font-size: 20px;
     font-weight: 500;
-    color: #ee6e73;
+    color: white;
     display: block;
     margin-bottom: 20px;
     
+}
+.collection-item {
+    color: white;
+
 }
 .collection .collection-item img{
     width: 150px;
@@ -73,4 +78,6 @@ background-image: url(./SPORTIFYIMAGE.jpg);
 .item-desc{
     align-self:center;
 }
-
+.cart {
+    color: white;
+}
