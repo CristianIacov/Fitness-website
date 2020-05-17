@@ -2,32 +2,35 @@ body {
 
 margin:0;
 padding:0;
-/*background-color: #96CCFF;
-background-image: url(./SPORTIFYIMAGE.jpg);
-  background-repeat: no-repeat;
-   background-size: contain; 
-   height: 100%;
-   background-image: url("./Images/Background.jpeg");
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: cover; */
+  background-image: url(./Images/Background.jpeg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
 }
+.aliniere{
+text-align: center;
 
+}
 .lh-copy {
     line-height: 1.5;
+    text-align: center
     
 }
 
 .pa3 {
     padding: 1rem;
+    text-align: center
 }
 
 .f4 {
     font-size: 1.25rem;
+    text-align: center
 }
 
 .measure {
     max-width: 30em;
+    text-align: center
 }
 
 @media screen and (min-width: 30em) {
