@@ -15,18 +15,18 @@ import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,ADD_SHIPPING } from '
 
 const initState = {
     items: [
-        {id:1,title:'Whey protein', desc: "some text", price:125,img:Item1},
-        {id:2,title:'Creatine powder', desc: "some text", price:80,img: Item2},
-        {id:3,title:'BCAA', desc: "some text",price:120,img: Item3},
-        {id:4,title:'Carnitine', desc: "some text", price:260,img:Item4},
-        {id:5,title:'Pre workout', desc: "some text", price:160,img: Item5},
-        {id:6,title:'Protein bar', desc: "some text",price:90,img: Item6},
-        {id:7,title:'Shaker', desc: "some text",price:90,img: Item7},
-        {id:8,title:'T-Shirt', desc: "some text",price:90,img: Item8},
-        {id:9,title:'T-Shirt', desc: "some text",price:90,img: Item9},
-        {id:10,title:'Opti Women', desc: "some text",price:90,img: Item10},
-        {id:11,title:'Customized Workout Plan', desc: "some text",price:90,img: Item11},
-        {id:11,title:'Customized Diet Plan', desc: "some text",price:90,img: Item12}
+        {id:1,title:'Whey protein', desc: "Healthy way to add more protein to your diet", price:225,img:Item1},
+        {id:2,title:'Creatine powder', desc: "Provides the energy for muscle contractions", price:210,img: Item2},
+        {id:3,title:'BCAA', desc: "Group of three essential amino acids taken in order to boost muscle growth",price:160,img: Item3},
+        {id:4,title:'Carnitine', desc: "Helps the body turn fat into energy", price:150,img:Item4},
+        {id:5,title:'Pre workout', desc: "Gives boost workout performance", price:200,img: Item5},
+        {id:6,title:'Protein bar', desc: "Provides food energy in carbohydrate form",price:20,img: Item6},
+        {id:7,title:'Shaker', price:40,img: Item7},
+        {id:8,title:'T-Shirt', price:120,img: Item8},
+        {id:9,title:'T-Shirt', price:120,img: Item9},
+        {id:10,title:'Opti Women', desc: "Gives minerals and vitamins for active women",price:100,img: Item10},
+        {id:11,title:'Customized Workout Plan', desc: "Personal workout planning assistant",price:400,img: Item11},
+        {id:11,title:'Customized Diet Plan', desc: "Personal meal planning assistant",price:400,img: Item12}
 
     ],
     addedItems:[],
