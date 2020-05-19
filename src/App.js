@@ -96,7 +96,7 @@ render(){
         Let us help you find a plan that fits your lifestyle needs. </p>
         </div>
 
-      </div>
+      
       </main>
   
       :  (route === 'about'?
