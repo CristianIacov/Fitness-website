@@ -1,0 +1,21 @@
+.workouttext{
+	text-align: center;
+   font-family: "Times New Roman", Times, serif;
+}
+.column {
+  float: left;
+  width: 43.33%;
+  padding: 60px;
+   font-family: "avenir next";
+    text-align: right;
+}
+
+/* Clear floats after image containers */
+.row::after {
+	 font-family: "avenir next";
+	 text-align: right;
+  content: "";
+  clear: both;
+  display: table;
+}
+

@@ -8,17 +8,14 @@ class Cart extends Component{
     //to remove the item completely
     handleRemove = (id)=>{
         this.props.removeItem(id);
-        window.alert('Item removed');
     }
     //to add the quantity
     handleAddQuantity = (id)=>{
         this.props.addQuantity(id);
-        window.alert('Added one more to cart');
     }
     //to substruct from the quantity
     handleSubtractQuantity = (id)=>{
         this.props.subtractQuantity(id);
-        window.alert('Substracted one from cart');
     }
     render(){
         
@@ -39,13 +36,11 @@ class Cart extends Component{
                                         <p>
                                             <b>Quantity: {item.quantity}</b> 
                                         </p>
-                                        <div>
-                                        <button onClick={()=>{this.handleAddQuantity(item.id)}}>Add more</button>
-                                        <button onClick={()=>{this.handleSubtractQuantity(item.id)}}>Substract</button>
+                                        <div className="add-remove">
+                                        <i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i>
+                                           <i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i>
                                         </div>
-                                        <div>
-                                        <button onClick={()=>{this.handleRemove(item.id)}}>Remove</button>
-                                        </div>
+                                        <button className="waves-effect waves-light btn pink remove" onClick={()=>{this.handleRemove(item.id)}}>Remove</button>
                                     </div>
                                     
                                 </li>

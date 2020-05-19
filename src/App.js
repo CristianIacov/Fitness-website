@@ -68,7 +68,7 @@ render(){
     {
       route ==='home'?
       <main>
-      <div className="aliniere">
+
       <div className="pa3 pa5-ns" >
         
         <p className="f4 lh-copy measure" >
@@ -77,7 +77,7 @@ render(){
           ON THE MARKET RIGHT NOW.
    
         </p>
-        </div>
+        
       </div>
       </main>
   

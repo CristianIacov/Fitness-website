@@ -33,11 +33,7 @@
 }
 
 .App{
-  background-image: url(./Images/Background.jpeg);
-  background-repeat: no-repeat; 
-  background-size: cover;
-  min-width: 100%;
-  min-height: 100%;
+
 }
 @keyframes App-logo-spin {
   from {
