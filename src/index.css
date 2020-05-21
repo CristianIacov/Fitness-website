@@ -2,16 +2,15 @@ body {
 
 margin:0;
 padding:0;
-  background-image: url(./Images/Background.jpeg);
+  background-image:  url(./Images/Background.jpeg);
   background-repeat: no-repeat; 
   background-size: cover;
+
   min-width: 100%;
   min-height: 100%;
 }
-.aliniere{
-text-align: center;
 
-}
+
 .lh-copy {
     line-height: 1.5;
     text-align: center

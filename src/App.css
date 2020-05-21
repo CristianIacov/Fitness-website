@@ -31,9 +31,24 @@
 .App-link {
   color: #61dafb;
 }
+.aliniere{
+ width: 100%;
+  padding: 10px;
+   
+    text-align: center;
+
+
+}
+
+.par{text-align: center;
+    color: #ffffff;
+     font-family: 'Lato', sans-serif,sans;
+      font-size: 34px; font-weight: 300; line-height: 58px; margin: 0 0 58px;
+}
+
 
 .App{
-
+  
 }
 @keyframes App-logo-spin {
   from {

@@ -26,11 +26,30 @@ export default class App extends React.Component{
       isWorkout:false,
       isDiet:false,
       isCart:false,
-      isHome: true
+      isHome: true,
+        user: {
+        
+        id: '',
+  name: '',
+  email: '',
+
+  entries: 0,
+  joined:''
      
 
-    };
-  }
+    }
+  }}
+  loadUser= (data) =>{
+this.setState({user:
+{  
+        id: data.id,
+  name: data.name,
+  email: data.email,
+
+  entries: data.entries,
+  joined:data.joined
+
+}})}
     onRouteChange = (route) => {
     if( route === 'signout'){
       this.setState({isSignedIn: false})
@@ -69,31 +88,14 @@ render(){
       route ==='home'?
       <main>
 
-      <div className="pa3 pa5-ns" >
+      <div className="align" >
+      
+            
+       <h1 className="par">
+        “Respect your body. It’s the only one you get.”</h1>
         
-        <p className="f4 lh-copy measure" >
 
-          START YOUR TRANSFORMATION NOW 
-          WITH THE BEST WORKOUT&DIET PLANS
-          ON THE MARKET RIGHT NOW.
-   
-        </p>
-        
-       <p>
-        Deciding to make a change in your life is never easy. 
-        Breaking old habits and creating healthy ones can be
-        challenging and even discouraging at times. However,
-        it’s not impossible. </p>
-
-        <p className="f4 lh-copy measure" >
-        Whether you are looking for a positive outlook on life,
-        wanting to change your diet and eat nutritious foods or
-        you need a new workout plan, our Healthy Lifestyle 
-        programs discusses different ways you can find a 
-        healthier and happier life. </p>
-
-        <p className="f4 lh-copy measure" >
-        Let us help you find a plan that fits your lifestyle needs. </p>
+      
         </div>
 
       
@@ -102,7 +104,7 @@ render(){
       :  (route === 'about'?
       <About />
       : (route === 'login'?
-      <Login />
+      <Login  onRouteChange={this.onRouteChange}/>
       : (route === 'workout'?
       <Workout />
       : (route === 'diet'?
@@ -111,9 +113,11 @@ render(){
       <Cart />
       :(route === 'shop'?
       <ShopItems/>
-        :
+        :(route === 'register'?
+          <Register onRouteChange={this.onRouteChange}/>
+          :
     <h1> Main Page </h1>
-    ))))))
+    )))))))
 
     }
     </div>
