@@ -66,7 +66,7 @@ class Cart extends Component{
                         {addedItems}
                     </ul>
                 </div> 
-                <Recipe />          
+                <Recipe onRouteChange={this.props.onRouteChange}/>          
             </div>
        )
     }

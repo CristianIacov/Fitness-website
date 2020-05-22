@@ -12,6 +12,7 @@ import Cart from './Components/Cart';
 import ShopItems from './Components/ShopItems';
 import About from './Components/About';
 import SPORTIFYIMAGE from './SPORTIFYIMAGE.jpg';
+import Appay from './Components/PaypalApp';
 import 'tachyons';
 
 export default class App extends React.Component{
@@ -93,6 +94,8 @@ render(){
   
       :  (route === 'about'?
       <About />
+      :(route === 'apppay'?
+        <Appay items={this.props.items}/>
       : (route === 'login'?
       <Login  onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
       : (route === 'workout'?
@@ -100,14 +103,14 @@ render(){
       : (route === 'diet'?
       <Diet />
       :(route === 'cart'?
-      <Cart />
-      :(route === 'shop'?
+      <Cart onRouteChange={this.onRouteChange}/>
+      :((route === 'shop' && this.state.isSignedin===true)?
       <ShopItems/>
         :(route === 'register'?
           <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser} setLogin={this.setLogin}/>
           :
-    <h1> Main Page </h1>    
-    )))))))
+       <Login  onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
+    ))))))))
 
     }
     </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import Appay from './PaypalApp';
 //import { addShipping } from './actions/cartActions'
 class Recipe extends Component{
     
@@ -16,6 +17,7 @@ class Recipe extends Component{
             this.props.substractShipping();
         }
     }
+changeRoute = () => this.props.onRouteChange('apppay');
 
     render(){
   
@@ -31,7 +33,7 @@ class Recipe extends Component{
                         <li className="collection-item"><b>Total: {this.props.total} $</b></li>
                     </div>
                     <div className="checkout">
-                        <button className="waves-effect waves-light btn">Checkout</button>
+                        <button onClick={this.changeRoute} className="waves-effect waves-light btn">Checkout</button>
                     </div>
                  </div>
         )
