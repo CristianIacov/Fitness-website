@@ -1,5 +1,6 @@
-import React from 'react';
-import './Login.css';
+
+import React, { Component } from 'react';
+import './Register.css';
 
 class  Register extends React.Component  {
 	constructor(props){
@@ -13,9 +14,9 @@ onEmailChange= (event) =>{
   this.setState({signInEmail: event.target.value})
 }
 onPasswordChange= (event)=>{
-  this.setState({signInPassword:event.target.value})
+  this.setState({signInPassword: event.target.value})
 }
-onSubmitSignIn= () => {
+onSubmitLogin1= () => {
   fetch('http://localhost:3001/signin',{
     method: 'post',
     headers: {'Content-Type':'application/json'},
@@ -26,28 +27,38 @@ onSubmitSignIn= () => {
   })
   .then(response=>response.json())
   .then(user => {
-        if(user.id ){
-            window.alert('You are logged in');
+       
+          if(user.id){
+          
+          this.props.setLogin(true);
           this.props.loadUser(user);
-          this.props.onRouteChange('home');
+          this.props.onRouteChange('diet');
+          window.alert("working");
         }
         else
-        	 window.alert('Invalid user');
+        	window.alert("wrong credentials");
        
+        
+        	
   })
  
 }
+
+changeRoute= () => 
+	 this.props.onRouteChange('diet');
+
 	render(){
+		
   return (
 <form>
-<ul class="form-style-1">
+<ul className="form-style-1">
 <h1> Login </h1>
 
 <li>
-    <label>Email <span class="required">*</span></label>
-        <input type="email" name="field3" class="field-long"  onChange={this.onEmailChange} />
-        <label>Password <span class="required">*</span></label>
-        <input type="password" name="field5" class="field-long"     onChange={this.onPasswordChange} />
+    <label>Email <span className="required">*</span></label>
+        <input onChange={this.onEmailChange} type="email"  className="field-long"   />
+        <label>Password <span className="required">*</span></label>
+        <input  onChange={this.onPasswordChange} type="password"  className="field-long"     />
 
 </li>
    <li>
@@ -56,7 +67,9 @@ onSubmitSignIn= () => {
         
     </li>
 <li>
- <input type="submit" value="Submit"   onClick={this.onSubmitSignIn}/>
+
+  <input onClick={this.onSubmitLogin1} type="button" value="Submit"  />
+  
  </li>  
 
 </ul>
@@ -66,3 +79,10 @@ onSubmitSignIn= () => {
 }}
 
 export default Register;
+
+
+
+
+
+
+

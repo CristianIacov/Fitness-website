@@ -19,14 +19,6 @@ export default class App extends React.Component{
     super();
     this.state={
       route: 'home',
-      isContact: false,
-      isSignedin: false,
-      isShop:false ,
-      isAbout:false,
-      isWorkout:false,
-      isDiet:false,
-      isCart:false,
-      isHome: true,
         user: {
         
         id: '',
@@ -50,6 +42,12 @@ this.setState({user:
   joined:data.joined
 
 }})}
+onInputChange=(event) =>{
+      this.setState({input: event.target.value});
+    }
+setLogin = (data) =>
+  this.setState({isSignedin : data
+  });
     onRouteChange = (route) => {
     if( route === 'signout'){
       this.setState({isSignedIn: false})
@@ -59,24 +57,16 @@ this.setState({user:
     {
       this.setState({isHome: true})
     }
-    else
-      if (route === 'about')
-        this.setState({isAbout: true})
+   
     this.setState({route: route});
   }
 
 render(){
   const {isSignedIn,route,isHome,isWorkout,isContact,isAbout,isShop}=this.state;
-  /*const myImage = require('./Images/Background.jpeg');
-  const divStyle = {
-    width: '88%',
-    height: '800px',
-    backgroundImage: `url(${myImage})`,
-    backgroundSize: 'cover'   
-  }; */
+  
  return (
     
-<div className="App" /*style={divStyle} */ > 
+<div className="App" > 
     <Navigation  
    
     isContact={isContact} isSignedIn={isSignedIn} 
@@ -86,7 +76,7 @@ render(){
   
     {
       route ==='home'?
-      <main>
+        
 
       <div className="align" >
       
@@ -99,12 +89,12 @@ render(){
         </div>
 
       
-      </main>
+      
   
       :  (route === 'about'?
       <About />
       : (route === 'login'?
-      <Login  onRouteChange={this.onRouteChange}/>
+      <Login  onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
       : (route === 'workout'?
       <Workout />
       : (route === 'diet'?
@@ -114,9 +104,9 @@ render(){
       :(route === 'shop'?
       <ShopItems/>
         :(route === 'register'?
-          <Register onRouteChange={this.onRouteChange}/>
+          <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser} setLogin={this.setLogin}/>
           :
-    <h1> Main Page </h1>
+    <h1> Main Page </h1>    
     )))))))
 
     }

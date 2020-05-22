@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -45,18 +45,17 @@ onSubmitSignIn= () => {
 onSubmitLogin= () => this.props.onRouteChange('register');
     render(){
   return (
-
 <form>
-<ul class="form-style-1">
-    <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+<ul className="form-style-1">
+    <li><label>Full Name <span className="required">*</span></label><input type="text" name="field1" className="field-divided" placeholder="First" /> <input type="text" name="field2" className="field-divided" placeholder="Last" /></li>
     <li>
 
-        <label>Username <span class="required">*</span></label>
-        <input type="text" name="field4" class="field-long" onChange={this.onNameChange}/>
-        <label>Password <span class="required">*</span></label>
-        <input type="password" name="field5" class="field-long"    onChange={this.onPasswordChange} />
-        <label>Email <span class="required">*</span></label>
-        <input type="email" name="field3" class="field-long"  onChange={this.onEmailChange}/>
+        <label>Username <span className="required">*</span></label>
+        <input type="text" name="field4" className="field-long" onChange={this.onNameChange}/>
+        <label>Password <span className="required">*</span></label>
+        <input type="password" name="field5" className="field-long"    onChange={this.onPasswordChange} />
+        <label>Email <span className="required">*</span></label>
+        <input type="email" name="field3" className="field-long"  onChange={this.onEmailChange}/>
         
     </li>
     <li>
@@ -66,7 +65,7 @@ onSubmitLogin= () => this.props.onRouteChange('register');
     </li>
     
     <li>
-     <input type="submit" value="Submit"  onClick={this.onSubmitSignIn}/>
+     <input onClick={this.onSubmitSignIn} type="submit" value="Submit"  />
        
         <a className=" hover-bg-light-green" onClick={this.onSubmitLogin}> Already have an account? </a>
 
