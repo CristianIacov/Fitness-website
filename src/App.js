@@ -83,8 +83,8 @@ render(){
       <div className="align" >
       
             
-       <h1 className="par">
-        “Respect your body. It’s the only one you get.”</h1>
+       <p className="par">
+        “Respect your body. It’s the only one you get.”</p>
         
 
       
