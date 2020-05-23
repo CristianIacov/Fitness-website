@@ -32,7 +32,7 @@ onSubmitLogin1= () => {
           
           this.props.setLogin(true);
           this.props.loadUser(user);
-          this.props.onRouteChange('diet');
+          this.props.onRouteChange('shop');
           window.alert("You are logged in");
         }
         else
@@ -45,7 +45,7 @@ onSubmitLogin1= () => {
 }
 
 changeRoute= () => 
-	 this.props.onRouteChange('diet');
+	 this.props.onRouteChange('shop');
 
 	render(){
 		
