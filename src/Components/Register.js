@@ -33,10 +33,10 @@ onSubmitLogin1= () => {
           this.props.setLogin(true);
           this.props.loadUser(user);
           this.props.onRouteChange('diet');
-          window.alert("working");
+          window.alert("You are logged in");
         }
         else
-        	window.alert("wrong credentials");
+        	window.alert("Wrong credentials");
        
         
         	

@@ -11,9 +11,9 @@ const Appay = () => {
   let paypalRef = useRef();
 
   const product = {
-    price: 100,
-    name: 'comfy chair',
-    description: 'fancy chair, like new'
+    price: 1,
+    name: 'Your items',
+    description: ''
     
   };
   useEffect(() => {

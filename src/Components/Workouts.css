@@ -1,6 +1,9 @@
 .workouttext{
+  font-size:25px;
+  width: 100%;
 	text-align: center;
-   font-family: "Times New Roman", Times, serif;
+   
+
 }
 .column {
   float: left;

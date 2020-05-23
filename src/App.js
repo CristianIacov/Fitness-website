@@ -14,7 +14,8 @@ import About from './Components/About';
 import SPORTIFYIMAGE from './SPORTIFYIMAGE.jpg';
 import Appay from './Components/PaypalApp';
 import 'tachyons';
-
+import Workoutwomen from './Components/Workoutwomen';
+import Workoutmen from './Components/Workoutmen';
 export default class App extends React.Component{
   constructor(){
     super();
@@ -99,7 +100,11 @@ render(){
       : (route === 'login'?
       <Login  onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
       : (route === 'workout'?
-      <Workout />
+      <Workout onRouteChange={this.onRouteChange}/>
+      :(route === 'wwmen' ?
+        <Workoutwomen />
+        :(route === 'wmen'?
+          <Workoutmen />
       : (route === 'diet'?
       <Diet />
       :(route === 'cart'?
@@ -110,7 +115,7 @@ render(){
           <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser} setLogin={this.setLogin}/>
           :
        <Login  onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
-    ))))))))
+    ))))))))))
 
     }
     </div>

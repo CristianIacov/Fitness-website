@@ -4,21 +4,21 @@ import women from '../Images/women.jpg';
 import './Workouts.css';
 import './Navigation.css';
 
-const Workout = () => {
+const Workout = ({onRouteChange}) => {
   return (
   
   
   
   <div className="row">
-  <h1 className="workouttext">TRY OUT ONE OF OUR FREE WORKOUTS </h1>
+  <p className="workouttext">TRY OUT ONE OF OUR FREE WORKOUTS </p>
   <div className="column"> 
-<a className=" hover-bg-light-green">
+<a onClick={()=> onRouteChange('wwmen') }className=" hover-bg-light-green">
 <img  src={men} /	>
 </a>
 
 </div>
 <div className="column">
-<a className=" hover-bg-light-green">
+<a onClick={()=> onRouteChange('wmen')} className=" hover-bg-light-green">
 <img  src={women}/	>
 </a>
 </div>

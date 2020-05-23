@@ -6,19 +6,19 @@ import unhealthy from '../Images/unhealthy.jpg';
 const Diet = () => {
   return (
   	<div className="diet">
-		<h3>One of the best ways to lose weight is by changing your diet. </h3>
+		<p>One of the best ways to lose weight is by changing your diet. </p>
 
-		<h3>Yet, the sheer number of available diet plans may make it difficult to get started, as you’re unsure which one is most suitable, sustainable, and effective. </h3>
+		<p>Yet, the sheer number of available diet plans may make it difficult to get started, as you’re unsure which one is most suitable, sustainable, and effective. </p>
 
-		<h3> Some diets aim to curb your appetite to reduce your food intake, while others suggest restricting your intake of calories and either carbs or fat. </h3>
+		<p> Some diets aim to curb your appetite to reduce your food intake, while others suggest restricting your intake of calories and either carbs or fat. </p>
 
-		<h3> What's more, many offer health benefits that go beyond weight loss. </h3>
+		<p> What's more, many offer health benefits that go beyond weight loss. </p>
 
-		<h3> Here are 2 examples of best diet plans to help you shed weight and improve your overall health. </h3>
+		<p> Here are 2 examples of best diet plans to help you shed weight and improve your overall health. </p>
 		
 		<img src={fasting} width="300" height="200" />
 
-		<h1>1.Intermittent fasting</h1>
+		<h1 className="diettitle">1.Intermittent fasting</h1>
 
 		<p>Intermittent fasting is a dietary strategy that cycles between periods of fasting and eating. </p>
 
@@ -38,12 +38,12 @@ const Diet = () => {
 
 		<p>That said, those sensitive to drops in their blood sugar levels, such as some people with diabetes, low weight, or an eating disorder, as well as pregnant or breastfeeding women, should talk to a health professional before starting intermittent fasting. </p>
 
-		<h3>Summary</h3>
+		<h3 className="diettitle">Summary</h3>
 		<p>Intermittent fasting cycles between periods of fasting and eating. It has been shown to aid weight loss and is linked to many other health benefits. </p>
 
 		<img src={unhealthy} width="300" height="300" />
 
-		<h1>2.Low-fat diet</h1>
+		<h1 className="diettitle">2.Low-fat diet</h1>
 
 		<p>Like low-carb diet, low-fat diet has been popular for decades.</p>
 

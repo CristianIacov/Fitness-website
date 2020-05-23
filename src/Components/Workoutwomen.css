@@ -1,0 +1,31 @@
+.workoutmen {
+
+width : 100%;
+padding: 100px;
+font-size: 20px;
+text-align: left;
+
+}
+
+
+table {
+border: 1px solid white;
+font-size:25px;
+	color: #FFFFFF;
+
+}
+
+.title1{
+   text-align: center;
+	font-size:35px;
+}
+
+.title2{
+	font-size:25px;
+}
+
+.rows{
+	padding: 30px;
+	font-size: 22px;
+	font-family: "Times New Roman", Times, serif;
+}
