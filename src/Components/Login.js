@@ -23,7 +23,7 @@ onPasswordChange= (event)=>{
   this.setState({password:event.target.value})
 }
 onSubmitSignIn= () => {
-  fetch('http://localhost:3001/register',{
+  fetch('https://guarded-lowlands-54848.herokuapp.com/register',{
     method: 'post',
     headers: {'Content-Type':'application/json'},
     body: JSON.stringify({
@@ -38,7 +38,10 @@ onSubmitSignIn= () => {
     if (user){
       this.props.loadUser(user)
  this.props.onRouteChange('register');
+ window.alert('Registered');
     }
+    else
+        window.alert('not working');
   })
  
 }
@@ -65,7 +68,7 @@ onSubmitLogin= () => this.props.onRouteChange('register');
     </li>
     
     <li>
-     <input onClick={this.onSubmitSignIn} type="submit" value="Submit"  />
+     <input onClick={this.onSubmitSignIn} type="button" value="Submit"  />
        
         <a className=" hover-bg-light-green" onClick={this.onSubmitLogin}> Already have an account? </a>
 
